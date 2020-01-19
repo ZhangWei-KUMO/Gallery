@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
-import Spinner from './components/CloudSpinner';
+import Spinner from './components/Spinner';
 import Home from './pages/home';
-
+import Error from './pages/error';
 
 class App extends React.Component {
   public render() {

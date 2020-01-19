@@ -1,14 +1,16 @@
 import * as React from 'react';
-import CustomLayout from '../components/CustomLayout';
-import Dashboard from '../components/Dashboard';
+import Header from '../components/Header';
+import PictureList from '../components/PictureList';
+
 class Home extends React.Component {
   public render() {
     return (
       <div>
-        <Dashboard />
+        <Header />
+        <PictureList />
       </div>
     )
   }
 }
 
-export default CustomLayout(Home, "home");
+export default Home
