@@ -1,2 +1,2 @@
-# Gallery
-画廊应用
+# administrator
+云链笔记后台管理
