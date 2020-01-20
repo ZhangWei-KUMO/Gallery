@@ -20,10 +20,10 @@ const items = [
 ]
 
 const fakes = [
-  { name: "1", link: a_pic.default },
-  { name: "2", link: b_pic.default },
-  { name: "3", link: c_pic.default },
-  { name: "4", link: d_pic.default },
+  { name: "星空1", author: "梵高", style: "文艺复兴风格", link: a_pic.default },
+  { name: "星空2", author: "梵高", style: "文艺复兴风格", link: b_pic.default },
+  { name: "星空3", author: "梵高", style: "文艺复兴风格", link: c_pic.default },
+  { name: "星空4", author: "梵高", style: "文艺复兴风格", link: d_pic.default },
 ];
 
 
@@ -46,7 +46,11 @@ class PictureList extends React.Component {
           </div>
           <div className="pictures">
             {fakes.map(item => (
-              <Picture key={item.name} src={item.link}
+              <Picture key={item.name}
+                author={item.author}
+                name={item.name}
+                style={item.style}
+                src={item.link}
               />
             ))}
           </div>

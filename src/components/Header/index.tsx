@@ -24,7 +24,7 @@ class Header extends React.Component {
           </nav>
           <div className="text">
             <div className="cell">
-              <h1>Jiashun·Fang's
+              <h1>Hacker·Zhang's
                 <br></br> Gallery</h1>
             </div>
           </div>
