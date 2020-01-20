@@ -34,13 +34,13 @@
      align-content: space-around;
      justify-content: space-between;
 
-     img {
-      height: 100%;
-     }
-
+  
      .picture-normal {
        width: 100%;
        text-align: center;
+       .innerPic {
+        height: 100%;
+       }
      }
 
      .picture-hover {
@@ -84,17 +84,25 @@
     .open-details {
       background: #fff;
       position: fixed;
+      overflow: scroll;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: 1000;
+      display: grid;
+      grid-template-columns: 4fr 2fr;
+      grid-gap: 10px;
+      .outterPic {
+        width: 100%;
+      }
       span {
         font-size: 2rem;
         position: absolute;
         right: 1rem;
         top:1rem;
         font-weight: bolder;
+        color: rgb(143, 142, 142);
         cursor: pointer;
       }
     }

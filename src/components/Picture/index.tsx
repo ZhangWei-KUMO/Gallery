@@ -73,13 +73,14 @@ class PictureList extends React.Component<IProps, IState> {
       >
         <div className={detailsClass}>
           <span onClick={this.closeDetails}>X</span>
+          <img src={this.props.src} className="outterPic" />
           <h1>{this.props.name}</h1>
         </div>
         <div className={maskClass} onClick={this.openDetails}>
           <h2 className="animated fadeInDown faster delay-500 " >{this.props.name}</h2>
           <h4 className="animated fadeInUp faster delay-500 ">{this.props.author}/{this.props.style}</h4>
         </div>
-        <img src={this.props.src} />
+        <img src={this.props.src} className="innerPic" />
       </section>
     )
   }
