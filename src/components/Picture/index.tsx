@@ -2,7 +2,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import "./index.less";
-import "./animate.less";
+import "../../style/css/animate.less";
 interface IProps {
   src?: string;
   name?: string;
